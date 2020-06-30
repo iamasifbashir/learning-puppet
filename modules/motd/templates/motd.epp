@@ -1,0 +1,3 @@
+Welcome to <%= $facts['networking']['fqdn'] %>.
+
+This is a <%= $facts['os']['family'] %> server, running <%= $facts['os']['name'] %> <%= $facts['os']['release']['full'] %>.

@@ -1,0 +1,14 @@
+<%- | $port,
+      $default_animal,
+      $default_message,
+| -%>
+
+# /etc/pasture_config.yaml
+# This File is managed by Puppet
+# Please don't make manual changes
+---
+:default_character: <%= $default_animal %>
+:default_message: <%= $default_message %>
+:sinatra_settings:
+  :port: <%= $port %>
+  :server: webrick
